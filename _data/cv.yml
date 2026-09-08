@@ -64,37 +64,33 @@ cv:
         url: https://github.com/YifeiWang0618/Multi-Agent
         start_date: 2025-11
         end_date: present
-        summary: An MCP-based intelligent shopping assistant.
+        summary: An MCP-based multi-agent shopping assistant.
         highlights:
-          - Implemented the LLM → Router → MCP Server → Backend API tool-calling pipeline.
-          - Built a Vue 3 conversational interface that renders structured tool results as product cards.
+          - Built an end-to-end tool-calling pipeline and a Vue 3 interface for structured product results.
 
       - name: Collector+ (Collector-AI)
         url: https://github.com/YifeiWang0618/Creator_ai
         start_date: 2026-01
         end_date: 2026-01
-        summary: A low-latency information extraction and gamified-reading assistant built around a linear monolithic architecture.
+        summary: A low-latency assistant for turning long-form content into interactive prediction questions.
         highlights:
-          - Reduced end-to-end generation latency to approximately 15–30 seconds with an asynchronous FastAPI pipeline.
-          - Implemented general-purpose parsing for WeChat articles and Bilibili videos, together with an intuition-driven React interaction flow.
+          - Achieved approximately 15–30 seconds of generation latency across articles, videos, and dynamic webpages.
 
       - name: FitSnap
         url: https://fit-snap-beige.vercel.app/
         start_date: 2025-12
         end_date: 2025-12
-        summary: A structured instruction-generation system for semantic video understanding.
+        summary: A video-understanding system that generates structured, timestamped instructions.
         highlights:
-          - Used DeepSeek-V3 to transform video transcripts into timestamped steps with action categories and key parameters.
-          - Built bidirectional synchronization between video playback and step cards with Next.js 16, React 19, and Zustand.
+          - Synchronized video playback with task-specific step cards using Next.js, React, and Zustand.
 
       - name: BiGEM Data Retrieval and Visualization Platform
         url: https://2025.igem.wiki/bit-china/software
         start_date: 2024-09
         end_date: 2025-10
-        summary: Winner of a 2025 iGEM Gold Medal and Best Software in the undergraduate category.
+        summary: An LLM-enhanced retrieval and visualization platform for 20 years of iGEM data.
         highlights:
-          - Cleaned and connected 20 years of competition data and visualized collaboration networks with D3.js and Three.js.
-          - Integrated LLM-based semantic analysis to improve retrieval of biological parts and historical projects.
+          - Received a 2025 iGEM Gold Medal and Best Software in the undergraduate category.
 
     Awards:
       - title: Honorable Mention

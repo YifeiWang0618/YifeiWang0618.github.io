@@ -162,18 +162,10 @@
   {重构中}
   {
     \begin{itemize}
-      \item 探索Anthropic发布的模型上下文协议（MCP），
-      构建连接大语言模型与Medusa电商后台的智能中介系统。
-      \item 搭建标准MCP Server，
-      使大语言模型通过通用协议自动发现并调用
-      \texttt{search\_products}、\texttt{get\_details}等工具。
-      \item 探索Planner--Worker多智能体协作架构，并结合RAG增强任务处理。
-      \item 实现“用户请求$\rightarrow$Claude大语言模型$\rightarrow$路由器
-      $\rightarrow$MCP Server$\rightarrow$后端API”的完整数据链路，
-      验证大语言模型操作外部系统的可行性。
-      \item 使用Vue 3构建对话界面，
-      解析工具执行结果并渲染为可视化商品卡片；
-      项目正由单Agent向Multi-Agent架构演进。
+      \item 基于MCP打通“LLM—路由器—MCP Server—Medusa API”工具调用链路，
+      实现商品搜索与详情查询。
+      \item 探索Planner--Worker多智能体架构，
+      并使用Vue 3将工具结果呈现为可视化商品卡片。
     \end{itemize}
   }
 
@@ -186,18 +178,9 @@
   {}
   {
     \begin{itemize}
-      \item 通过大语言模型将长文本或视频快速转化为二元预测性问题，
-      实现“游戏化阅读”（Gamified Reading）。
-      \item 摒弃复杂的Agent编排，
-      设计Linear Monolithic线性单体架构并结合FastAPI异步处理，
-      将端到端生成延迟压缩至15--30秒。
-      \item 设计认知科学家System Prompt，
-      在单次推理中通过Chain-of-Thought完成内容重构、
-      反直觉观点挖掘与格式化输出。
-      \item 实现微信公众号、哔哩哔哩通用内容解析器，
-      以及动态渲染页面的通用解析，
-      解决懒加载和动态渲染问题；
-      使用React Context管理全局状态，构建直觉对赌交互机制。
+      \item 将长文与视频转化为二元预测问题，并支持基于原文的问答。
+      \item 采用FastAPI异步线性管道将生成延迟控制在约15--30秒，
+      支持微信公众号、哔哩哔哩及动态网页解析。
     \end{itemize}
   }
 
@@ -209,18 +192,9 @@
   {私有仓库，可提供技术报告}
   {
     \begin{itemize}
-      \item 面向人类学习场景中非结构化视频难以被执行的问题，
-      构建将长视频实时转化为结构化步骤指令的系统。
-      \item 使用Python抓取哔哩哔哩视频字幕与元数据，
-      构建“视频—文本—指令”映射管道；
-      利用DeepSeek-V3进行长文本语义理解，
-      开发内容无关的提取算法，自动过滤冗余信息并归纳核心操作。
-      \item 通过System Prompt约束模型输出严格JSON格式，
-      包含时间戳、操作分类和关键参数，
-      实现从流式媒体到结构化指令的跨维度转换。
-      \item 使用Next.js 16、React 19和Zustand构建前端，
-      完成视频时间戳与步骤卡片的双向实时联动，
-      并按健身、烹饪等任务动态生成领域界面。
+      \item 使用DeepSeek-V3将视频内容转化为带时间戳、
+      操作分类和关键参数的结构化步骤。
+      \item 基于Next.js、React和Zustand实现视频播放与步骤卡片的双向同步。
     \end{itemize}
   }
 
@@ -232,15 +206,10 @@
   {\href{https://2025.igem.wiki/bit-china/}{项目Wiki}}
   {
     \begin{itemize}
-      \item 获2025 iGEM国际金奖及全球本科生组Best Software奖，
-      并正向上申报软件著作权。
-      \item 面向2004--2024年合成生物学竞赛数据，
-      使用Python爬虫完成海量科研数据清洗；
-      基于D3.js和Three.js实现力导向图、桑基图和树状关系图的动态渲染，
-      揭示全球队伍间的合作网络。
-      \item 接入大模型API，对生物元件库进行语义分析，
-      实现超越关键词匹配的模糊扩展搜索，
-      提升科研数据检索效率。
+      \item 清洗并关联2004--2024年iGEM数据，
+      使用D3.js和Three.js呈现全球合作网络。
+      \item 引入大模型语义检索；
+      项目获2025 iGEM国际金奖及全球本科生组Best Software。
     \end{itemize}
     % 作品集版本可取消以下注释：
     % \begin{center}
