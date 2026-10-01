@@ -156,6 +156,9 @@ collections:
   cs336:
     output: true
     permalink: /blog/cs336/:name/
+  writing_lab:
+    output: true
+    permalink: /blog/writing-lab/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -247,6 +250,15 @@ defaults:
       type: cs336
     values:
       layout: cs336
+      giscus_comments: true
+      toc:
+        sidebar: right
+  - scope:
+      path: ""
+      type: writing_lab
+    values:
+      layout: cs336
+      series: writing_lab
       giscus_comments: true
       toc:
         sidebar: right

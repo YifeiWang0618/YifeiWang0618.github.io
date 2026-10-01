@@ -1,5 +1,8 @@
 title: CS 336
 description: hi👋！This is my little space for CS336 notes, thoughts and assignments. I’d love to hear your thoughts.
+eyebrow: Notes · CS 336
+base_path: /blog/cs336
+home_path: /blog/cs336/lecture-1/
 
 view_count_path: /blog/cs336/lecture-1/
 view_count_legacy_paths:

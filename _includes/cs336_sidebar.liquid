@@ -1,17 +1,18 @@
+{% assign series = include.series | default: site.data.cs336 %}
 {% assign current_path = page.url | remove: 'index.html' %}
-{% unless current_path contains '/blog/cs336' %}
-  {% assign current_path = '/blog/cs336/' %}
+{% unless current_path contains series.base_path %}
+  {% assign current_path = series.home_path %}
 {% endunless %}
 
-<nav class="cs336-series-nav" aria-label="CS336 series">
+<nav class="cs336-series-nav" aria-label="{{ series.title }} series">
   <div class="cs336-series-brand">
-    <a href="{{ '/blog/cs336/lecture-1/' | relative_url }}" class="cs336-series-title">{{ site.data.cs336.title }}</a>
-    {% if site.data.cs336.description %}
-      <p class="cs336-series-desc">{{ site.data.cs336.description }}</p>
+    <a href="{{ series.home_path | relative_url }}" class="cs336-series-title">{{ series.title }}</a>
+    {% if series.description %}
+      <p class="cs336-series-desc">{{ series.description }}</p>
     {% endif %}
   </div>
 
-  {% for section in site.data.cs336.sections %}
+  {% for section in series.sections %}
     <div class="cs336-series-section">
       <p class="cs336-series-heading">{{ section.title }}</p>
       <ul>
@@ -21,8 +22,19 @@
           {% if current_path == item.path or current_path == item_path %}
             {% assign is_active = true %}
           {% endif %}
-          <li{% if is_active %} class="is-active"{% endif %}>
-            <a href="{{ item.path | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          <li
+            {% if is_active %}
+              class="is-active"
+            {% endif %}
+          >
+            <a
+              href="{{ item.path | relative_url }}"
+              {% if is_active %}
+                aria-current="page"
+              {% endif %}
+            >
+              {{- item.title -}}
+            </a>
           </li>
         {% endfor %}
       </ul>

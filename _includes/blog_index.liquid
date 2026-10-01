@@ -5,7 +5,7 @@
 {% endif %}
 
 <div class="blog-index-list" aria-label="Blog posts">
-  <a class="blog-index-entry blog-index-cs336" href="{{ '/blog/cs336/lecture-1/' | relative_url }}">
+  <a class="blog-index-entry blog-index-series" href="{{ '/blog/cs336/lecture-1/' | relative_url }}">
     <h2>{{ site.data.cs336.title }}</h2>
     <p class="blog-index-summary">{{ site.data.cs336.description }}</p>
     <p class="blog-index-meta">
@@ -30,6 +30,20 @@
       >
       {% assign cs336_tags = site.data.cs336.tags | slice: 0, 3 %}
       {% for tag in cs336_tags %}
+        &nbsp;&middot;&nbsp;<span class="blog-index-tag">#{{ tag }}</span>
+      {% endfor %}
+    </p>
+  </a>
+
+  <a class="blog-index-entry blog-index-series" href="{{ site.data.writing_lab.home_path | relative_url }}">
+    <h2>{{ site.data.writing_lab.title }}</h2>
+    <p class="blog-index-summary">{{ site.data.writing_lab.description }}</p>
+    <p class="blog-index-meta">
+      <span data-goatcounter-path="{{ site.data.writing_lab.view_count_path }}"
+        ><i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="unified-goatcounter-count">--</span> views</span
+      >
+      {% assign writing_lab_tags = site.data.writing_lab.tags | slice: 0, 3 %}
+      {% for tag in writing_lab_tags %}
         &nbsp;&middot;&nbsp;<span class="blog-index-tag">#{{ tag }}</span>
       {% endfor %}
     </p>

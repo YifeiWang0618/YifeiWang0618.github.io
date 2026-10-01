@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign series_key = page.series | default: 'cs336' %}
+{% assign series_data = site.data[series_key] | default: site.data.cs336 %}
 {% if page._styles %}
   <style type="text/css">
     {{ page._styles }}
@@ -8,13 +10,13 @@ layout: default
 {% endif %}
 
 <div class="cs336-docs">
-  <aside class="cs336-sidebar-left" aria-label="Series navigation">
-    {% include cs336_sidebar.liquid %}
+  <aside class="cs336-sidebar-left" aria-label="{{ series_data.title }} navigation">
+    {% include cs336_sidebar.liquid series=series_data %}
   </aside>
 
   <article class="cs336-content post">
     <header class="cs336-page-header">
-      <p class="cs336-eyebrow">Notes · CS 336</p>
+      <p class="cs336-eyebrow">{{ series_data.eyebrow | default: series_data.title }}</p>
       <h1 class="post-title">{{ page.title }}</h1>
       {% if page.description %}
         <p class="cs336-page-desc">{{ page.description }}</p>

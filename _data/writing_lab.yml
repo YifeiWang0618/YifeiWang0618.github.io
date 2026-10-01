@@ -1,0 +1,18 @@
+title: Writing Lab
+description: A working notebook for collecting, rewriting, and reviewing effective academic prose.
+eyebrow: Academic Writing · Writing Lab
+base_path: /blog/writing-lab
+home_path: /blog/writing-lab/rewriting-practice/
+
+view_count_path: /blog/writing-lab/rewriting-practice/
+tags:
+  - Academic Writing
+  - Revision
+  - Style
+sections:
+  - title: Sections
+    items:
+      - title: Rewriting Practice
+        path: /blog/writing-lab/rewriting-practice/
+      - title: Review & Summary
+        path: /blog/writing-lab/review-summary/
