@@ -392,6 +392,16 @@ ninja.data = [{
           description: "CS336 Lecture 1 笔记占位页。把 tokenization 相关内容填到下面各节即可。",
           section: "Cs336",handler: () => {
               window.location.href = "/blog/cs336/lecture-1/";
+            },},{id: "writing_lab-review-amp-summary",
+          title: 'Review &amp;amp; Summary',
+          description: "Review a piece of academic writing and turn the observations into reusable lessons.",
+          section: "Writing_lab",handler: () => {
+              window.location.href = "/blog/writing-lab/review-summary/";
+            },},{id: "writing_lab-rewriting-practice",
+          title: 'Rewriting Practice',
+          description: "Rewrite strong academic passages to study clarity, structure, and style.",
+          section: "Writing_lab",handler: () => {
+              window.location.href = "/blog/writing-lab/rewriting-practice/";
             },},{
         id: 'social-emails',
         title: 'Emails',
