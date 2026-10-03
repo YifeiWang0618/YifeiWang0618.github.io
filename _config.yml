@@ -156,6 +156,9 @@ collections:
   cs336:
     output: true
     permalink: /blog/cs336/:name/
+  cs231n:
+    output: true
+    permalink: /blog/cs231n/:name/
   writing_lab:
     output: true
     permalink: /blog/writing-lab/:name/
@@ -250,6 +253,15 @@ defaults:
       type: cs336
     values:
       layout: cs336
+      giscus_comments: true
+      toc:
+        sidebar: right
+  - scope:
+      path: ""
+      type: cs231n
+    values:
+      layout: cs336
+      series: cs231n
       giscus_comments: true
       toc:
         sidebar: right

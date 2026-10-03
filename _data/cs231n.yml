@@ -1,0 +1,16 @@
+title: CS 231n
+description: Notes on computer vision, visual recognition, and deep learning.
+eyebrow: Notes · CS 231n
+base_path: /blog/cs231n
+home_path: /blog/cs231n/lec1/
+
+view_count_path: /blog/cs231n/lec1/
+tags:
+  - Computer Vision
+  - Deep Learning
+  - Visual Recognition
+sections:
+  - title: Contents
+    items:
+      - title: Lec1
+        path: /blog/cs231n/lec1/

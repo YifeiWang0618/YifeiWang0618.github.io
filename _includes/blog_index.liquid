@@ -35,6 +35,20 @@
     </p>
   </a>
 
+  <a class="blog-index-entry blog-index-series" href="{{ site.data.cs231n.home_path | relative_url }}">
+    <h2>{{ site.data.cs231n.title }}</h2>
+    <p class="blog-index-summary">{{ site.data.cs231n.description }}</p>
+    <p class="blog-index-meta">
+      <span data-goatcounter-path="{{ site.data.cs231n.view_count_path }}"
+        ><i class="fa-regular fa-eye" aria-hidden="true"></i> <span class="unified-goatcounter-count">--</span> views</span
+      >
+      {% assign cs231n_tags = site.data.cs231n.tags | slice: 0, 3 %}
+      {% for tag in cs231n_tags %}
+        &nbsp;&middot;&nbsp;<span class="blog-index-tag">#{{ tag }}</span>
+      {% endfor %}
+    </p>
+  </a>
+
   <a class="blog-index-entry blog-index-series" href="{{ site.data.writing_lab.home_path | relative_url }}">
     <h2>{{ site.data.writing_lab.title }}</h2>
     <p class="blog-index-summary">{{ site.data.writing_lab.description }}</p>
