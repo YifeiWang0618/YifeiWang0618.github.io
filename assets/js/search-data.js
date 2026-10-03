@@ -382,7 +382,12 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "cs336-assignment-1-bpe-tokenizer-amp-transformer-basics",
+      },{id: "cs231n-lecture-1-introduction",
+          title: 'Lecture 1: Introduction',
+          description: "Brief notes on the roots of computer vision and deep learning.",
+          section: "Cs231n",handler: () => {
+              window.location.href = "/blog/cs231n/lec1/";
+            },},{id: "cs336-assignment-1-bpe-tokenizer-amp-transformer-basics",
           title: 'Assignment 1: BPE Tokenizer &amp;amp; Transformer Basics',
           description: "Assignment 1 笔记占位页。结构可按 Part 拆分，右侧 TOC 会跟着标题生成。",
           section: "Cs336",handler: () => {
