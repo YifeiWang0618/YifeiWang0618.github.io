@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "王艺霏（Sophie）· 北京理工大学计算机科学与技术专业本科生",
+          description: "王艺霏（Sophie） 北京理工大学计算机科学与技术专业24级本科生",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
